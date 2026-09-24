@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Program {
+public class InstantiateExample {
 	
 	public static void main(String[] args) {
 		// Instanciação
