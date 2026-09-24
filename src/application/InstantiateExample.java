@@ -51,7 +51,6 @@ public class InstantiateExample {
 		LocalDate paramsLocalDate1 = LocalDate.of(2026, 9, 24);
 		LocalDateTime paramsLocalDate2 = LocalDateTime.of(2026, 9, 24, 14, 52, 33);
 		
-		
 		System.out.println("paramsLocalDate1 = " + paramsLocalDate1);
 		System.out.println("paramsLocalDate2 = " + paramsLocalDate2);
 	}
