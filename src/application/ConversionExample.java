@@ -13,6 +13,7 @@ public class ConversionExample {
 		LocalDateTime localDateTime = LocalDateTime.parse("2026-09-25T01:20:00");
 		Instant globalDate = Instant.parse("2026-09-25T01:20:00Z");
 		
+		
 		// Convertendo Data-Hora Global para Local
 		LocalDate result1 = LocalDate.ofInstant(globalDate, ZoneId.systemDefault());
 		LocalDate result2 = LocalDate.ofInstant(globalDate, ZoneId.of("Portugal"));
