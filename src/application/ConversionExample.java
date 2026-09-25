@@ -4,6 +4,7 @@ import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.time.ZoneOffset;
 
 public class ConversionExample {
 
@@ -34,5 +35,14 @@ public class ConversionExample {
 		System.out.println("Minutos de localDateTime: " + localDateTime.getMinute());
 		
 		System.out.printf("Horário de localDateTime: %02d:%02d:%02d", localDateTime.getHour(), localDateTime.getMinute(), localDateTime.getSecond());
+	
+		// Convertendo Data-hora local para global
+		LocalDate local = LocalDate.of(2026, 9, 25);
+		LocalDateTime localWithTime = local.atTime(12, 30, 05);
+		Instant localToGlobal = localWithTime.atZone(ZoneId.of("America/Sao_Paulo")).toInstant();
+	
+		System.out.println("local = " + local);
+		System.out.println("localWithTime = " + localWithTime);
+		System.out.println("localToGlobal = " + localToGlobal);
 	}
 }
